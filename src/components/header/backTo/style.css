@@ -1,0 +1,51 @@
+.container {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  -webkit-animation: _3UyLB 0.3s ease;
+          animation: _3UyLB 0.3s ease;
+  z-index: 9;
+  min-width: 160px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+.container button {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+  color: #002f34;
+  border-radius: 4px;
+  border: 2px solid #002f34;
+  padding: 0 10px;
+  width: 100%;
+  font-size: 14px;
+  height: 40px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: none;
+  background: none;
+  outline: none;
+  text-transform: lowercase;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  line-height: normal;
+  text-decoration: none;
+  border-radius: 50px;
+}
+.container button div {
+  display: flex;
+  margin-right: 8px;
+  color: #002f34;
+  font-size: 14px;
+  text-transform: lowercase;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: normal;
+}/*# sourceMappingURL=style.css.map */

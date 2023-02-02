@@ -1,0 +1,51 @@
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-container .categoryList {
+  margin-top: 3rem;
+  position: absolute;
+  top: 44px;
+  display: flex;
+  width: 100%;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  max-width: 1280px;
+  transition: all 0.3s ease-in-out;
+  z-index: 8;
+}
+.menu-container .categoryList .categories {
+  -moz-column-count: 4;
+       column-count: 4;
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  justify-content: space-between;
+  padding: 16px 16px 0;
+}
+.menu-container .categoryList .categories .link-box-c {
+  margin: 8px 0;
+}
+.menu-container .categoryList .categories .list-c {
+  display: inline-block;
+  padding: 0 8px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  width: 100%;
+}
+.menu-container .categoryList .categories .list-c .header_link {
+  color: #002f34;
+  font-size: 14px;
+  -webkit-tap-highlight-color: transparent;
+}
+.menu-container .categoryList .categories .list-c .header_link:hover {
+  color: #52a49f;
+}
+.menu-container .categoryList .categories .list-c .link-data {
+  font-size: 16px;
+  font-weight: 700;
+  color: #002f34;
+  height: unset;
+  line-height: unset;
+  margin: 12px 0;
+}/*# sourceMappingURL=style.css.map */

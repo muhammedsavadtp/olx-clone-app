@@ -1,0 +1,136 @@
+.location-container {
+  position: absolute;
+  left: 60px;
+  top: 3.2rem;
+  z-index: 6;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  ::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(108, 104, 104, 0.111);
+  }
+
+  .main-box {
+    height: 320px;
+    overflow-y: auto;
+    background-color: #fff;
+    width: 272px;
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 12%), 0 6px 6px 0 rgb(0 0 0 / 24%);
+    position: relative;
+    border-radius: 4px;
+
+    @media screen and(max-width:950px) {
+      display: none;
+      
+    }
+ 
+    .ls-1 {
+      padding-top: 24px;
+      padding-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid rgba(14, 4, 5, 0.2);
+      color: #002f34;
+
+      .ls-1-1 {
+        display: flex;
+        align-items: center;
+        height: 48px;
+        cursor: pointer;
+        padding: 8px 8px 8px 14px;
+        box-sizing: border-box;
+        &:hover {
+          background-color: #c8f8f6;
+        }
+        .location-icon {
+          padding: 0px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          max-width: 34px;
+          fill: #3a77ff;
+          div {
+            width: 50%;
+          }
+        }
+        .location-1 {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          .current-location {
+            color: #002f34;
+
+            span {
+              color: #3a77ff;
+              font-size: 16px;
+              font-weight: 700;
+              white-space: nowrap;
+            }
+          }
+          span {
+            font-size: 14px;
+            color: #3a77ff;
+          }
+        }
+      }
+    }
+    .ls-2 {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid rgba(14, 4, 5, 0.2);
+
+      .ls-recent {
+        display: flex;
+        align-items: center;
+        height: 48px;
+        padding: 8px 8px 8px 16px;
+        box-sizing: border-box;
+
+        span {
+        }
+      }
+      div {
+        .ls-2-2 {
+          display: flex;
+          align-items: center;
+          height: 48px;
+          cursor: pointer;
+          padding: 8px 8px 8px 14px;
+          box-sizing: border-box;
+
+          &:hover {
+            background-color: #c8f8f6;
+          }
+          .all-loc-icon {
+            max-width: 34px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            fill: rgba(0, 47, 52, 0.64);
+            .space {
+              width: 60%;
+            }
+          }
+
+          .location-names {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            span {
+              color: #002f34;
+              font-size: 14px;
+              white-space: nowrap;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

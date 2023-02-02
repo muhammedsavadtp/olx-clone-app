@@ -1,0 +1,81 @@
+$primaryColor: #002f34;
+$backgroundColor-container: rgba(0, 47, 52, 0.03);
+$backgroundColor-header: #fff;
+$background-c: #fff;
+
+
+$width-media-hide:950px;
+$set-media-width:950px;
+
+@mixin transition-effect($duration:0.3s){
+   transition: all $duration cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+@mixin flex-box($justifyContent: space-between) {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: $justifyContent;
+}
+@mixin input-box {
+  width: 11.5rem;
+  outline: none;
+  border: none;
+  outline: 0;
+  border-width: 0;
+  font-size: 16px;
+  color: $primaryColor;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: $background-c;
+  padding: 0 0 0 5px;
+}
+
+@mixin span-text {
+  color: $primaryColor;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  color: $primaryColor;
+}
+//media-1
+@mixin media($display: none, $width) {
+  @if $display == none {
+    @media only screen and (max-width: $width) {
+      display: none;
+     @content;
+      @include transition-effect();
+    }
+  } @else {
+    @media only screen and (max-width: $width) {
+      display: block;
+       @content;
+           @include transition-effect();
+    }
+  }
+}
+
+
+@mixin responsive($width: 950px) {
+  @if $width == 950px {  
+ @include media(none,$width);
+   @content;
+  }
+
+ 
+}
+//media-2
+@mixin responsive-2($width:500px) {
+  @if $width == 500px {
+  @include media(block,$width);
+  @content;
+  }
+  @if $width == 950px {
+  @include media(block,$width);
+  @content;
+  }
+ 
+}

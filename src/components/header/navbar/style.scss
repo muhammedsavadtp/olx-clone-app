@@ -1,0 +1,424 @@
+@import "./variable.scss";
+
+//header
+header {
+  @include flex-box();
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  height: 72px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
+  width: 100%;
+  @media screen and(max-width:950px) {
+    padding: 0;
+    height: 105px;
+  }
+
+  #main-head {
+    background-color: #eff1f3;
+    height: 68px;
+    margin: 0 auto;
+    padding: 10px 16px;
+    -webkit-tap-highlight-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+      transition: all 0.3s ease-in-out;
+
+
+    @media screen and(max-width:950px) {
+      padding: 0;
+      height: 100px;
+      transition: all 0.3s ease-in-out;
+
+    }
+
+    #header-box {
+      width: 100%;
+
+      .container {
+        transition: all 0.3s ease-in-out;
+        @include flex-box();
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1280px;
+        position: relative;
+        background-color: transparent;
+
+        @media screen and(max-width :950px) {
+          transition: all 0.3s ease-in-out;
+          max-width: 100%;
+          display: flex;
+          align-items: center;
+
+          width: 100%;
+
+          justify-content: flex-start;
+        }
+
+        .hamburger {
+          @include flex-box(center);
+          display: none;
+          width: auto;
+
+          .hamburger-svg {
+            @include flex-box();
+            padding: 10px;
+            fill: $primaryColor;
+          }
+          @include responsive-2(500px) {
+            margin-left: 0;
+          }
+          @include responsive-2(950px) {
+            margin-left: 0;
+          }
+        }
+
+        .logo-box {
+          cursor: pointer;
+          @include flex-box();
+          max-width: 50px;
+
+          fill: $primaryColor;
+          transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+
+          .logo-svg {
+            @include flex-box();
+          }
+          @media screen and(min-width:950px) {
+          }
+        }
+        .location {
+          @include flex-box(flex-end);
+          display: none;
+
+          .location-container-1 {
+            @include flex-box();
+            justify-content: flex-end;
+
+            .location-text {
+              @include flex-box(flex-end);
+              padding: 5px;
+
+              span {
+                font-weight: 700;
+                color: $primaryColor;
+              }
+            }
+            .location-svg {
+              @include flex-box(flex-end);
+              width: auto;
+              fill: $primaryColor;
+            }
+          }
+          @include responsive-2(500px);
+          @include responsive-2(950px);
+        }
+        .filter-box {
+          @include flex-box(center);
+          display: none;
+          width: auto;
+
+          .filter-svg {
+            @include flex-box();
+            padding: 10px;
+            fill: $primaryColor;
+          }
+          @include responsive-2(500px) {
+            margin-left: 0;
+          }
+          @include responsive-2(950px) {
+            margin-left: 0;
+          }
+        }
+        .input-box-1 {
+          @include flex-box();
+          width: auto;
+
+          @include responsive();
+          @include responsive($width-media-hide);
+
+          .box-container {
+            margin-left: 10px;
+            height: 48px;
+            width: 272px;
+            max-height: 320px;
+
+            .bx-c-1 {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              background: $background-c;
+              padding: 0 8px;
+              // border: 2px solid $primaryColor;
+              border-radius: 4px;
+
+              .search {
+                width: 30%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                fill: $primaryColor;
+
+                span {
+                  width: 50%;
+                }
+              }
+              .input {
+                width: auto;
+                input {
+                  @include input-box();
+                }
+              }
+              .action-btn {
+                cursor: pointer;
+                @include flex-box();
+                padding: 5px;
+
+                .btn {
+                  padding: 5px;
+                  display: flex;
+                  -webkit-tap-highlight-color: transparent;
+                }
+              }
+            }
+          }
+        }
+        .input-box-2 {
+          @include flex-box();
+          @include responsive();
+          @include responsive($width-media-hide);
+
+          .container-bx-2 {
+            @include flex-box();
+
+            margin-left: 16px;
+            height: 48px;
+            box-sizing: border-box;
+
+            border-radius: 4px 0 0 4px;
+
+            background-color: transparent;
+            .input-bx-2 {
+              @include flex-box();
+
+              justify-content: flex-start;
+
+              .bx-2-inp {
+                @include input-box();
+                width: 100%;
+                height: 48px;
+                box-sizing: border-box;
+                border: 2px solid #002f34;
+                border-radius: 4px 0 0 4px;
+
+                &:focus {
+                  border: 2px solid #23e5db;
+                }
+              }
+            }
+          }
+        }
+        .search-btn-bx-2 {
+          @include flex-box();
+          @include responsive();
+          @include responsive($width-media-hide);
+
+          max-width: 49px;
+          .search-btn-box {
+            min-width: 48px;
+            height: 48px;
+            display: flex;
+            cursor: pointer;
+            background-color: $primaryColor;
+            border-radius: 0 4px 4px 0;
+
+            .search-svg {
+              @include flex-box();
+              justify-content: center;
+              fill: #fff;
+            }
+          }
+        }
+        .language-box {
+          @include flex-box();
+          @include responsive();
+          @include responsive($width-media-hide);
+          position: relative;
+
+          width: 133px;
+
+          .container-lang {
+            display: flex;
+            align-items: center;
+
+            padding: 10px;
+
+            span {
+              @include span-text();
+              width: 72px;
+            }
+            .arrow-btn {
+              cursor: pointer;
+              @include flex-box();
+              padding: 5px;
+
+              width: 34px;
+              .btn-lang {
+                @include flex-box();
+                fill: $primaryColor;
+                -webkit-tap-highlight-color: transparent;
+              }
+            }
+          }
+          .langBox-selection {
+            position: absolute;
+            top: 68px;
+            left: 15px;
+          }
+        }
+        .login-box {
+          @include flex-box();
+          @include responsive();
+          @include responsive($width-media-hide);
+
+          width: auto;
+
+          span {
+            padding: 5px;
+            position: relative;
+            @include span-text();
+            text-transform: capitalize;
+
+            &::after {
+              content: "";
+              background-color: $primaryColor;
+              position: absolute;
+              width: 90%;
+              height: 2px;
+              left: 3px;
+              top: 23px;
+              visibility: visible; /*content is visible by default*/
+            }
+
+            &:hover::after {
+              visibility: hidden; /*content is hidden when hovered over*/
+            }
+          }
+        }
+        .sell-box {
+          @include flex-box();
+          @include responsive();
+          @include responsive($width-media-hide);
+          cursor: pointer;
+
+          width: auto;
+          .sell-btn-box {
+            @include flex-box();
+
+            .sell-btn-svg {
+              border-radius: 24px;
+              padding: 10px;
+              box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%),
+                0 1px 10px 0 rgb(0 0 0 / 12%), 0 4px 5px 0 rgb(0 0 0 / 14%);
+
+              position: relative;
+              @include flex-box();
+              background-color: red;
+              height: 40px;
+              width: 97px;
+              margin-left: 10px;
+
+              .inside-sell-btn {
+                position: absolute;
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -48%);
+                .all {
+                  fill: white;
+                }
+
+                .top {
+                  fill: #23e5db;
+                }
+
+                .left {
+                  fill: #ffce32;
+                }
+
+                .right {
+                  fill: #3a77ff;
+                }
+                .sellMenuContent {
+                  display: flex;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  font-size: 14px;
+                  font-weight: 700;
+                  letter-spacing: 0.5px;
+                  color: $primaryColor;
+
+                  span {
+                    margin-left: 3px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .container-2 {
+        @include flex-box();
+        justify-content: center;
+        padding: 5px;
+        @media screen and(min-width:950px) {
+          display: none;
+        }
+
+        .search-box-2 {
+          width: 100%;
+          height: 40px;
+          background: $background-c;
+          display: flex;
+          padding: 12px 16px;
+          align-items: center;
+          box-sizing: border-box;
+          border: 2px solid $primaryColor;
+          border-radius: 4px;
+          cursor: pointer;
+
+          .input-box-2-container {
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+
+            .search-svg-bx-2 {
+              @include flex-box();
+              width: auto;
+
+              fill: $primaryColor;
+            }
+            .input-box-2 {
+              @include flex-box();
+
+              span {
+                margin-left: 10px;
+                width: calc(100% - 5px);
+                color: rgba(0, 47, 52, 0.64);
+                white-space: nowrap;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

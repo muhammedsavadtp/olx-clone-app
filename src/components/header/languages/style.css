@@ -1,0 +1,78 @@
+.language-container {
+  top: 9rem;
+  left: 65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.language-container .categoryList {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+.language-container .categoryList .languages {
+  -moz-column-count: 1;
+       column-count: 1;
+  width: 200px;
+  box-shadow: 0 4px 12px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  background-color: #fff;
+  justify-content: space-between;
+  padding: 16px 16px 0;
+  max-width: 20rem;
+}
+.language-container .categoryList .languages::before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  top: -10px;
+  content: " ";
+  height: 0;
+  left: 50%;
+  margin-left: -24px;
+  position: absolute;
+  width: 0;
+}
+.language-container .categoryList .languages ul {
+  margin: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+}
+.language-container .categoryList .languages ul li {
+  width: 100%;
+  width: 100%;
+  cursor: pointer;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.language-container .categoryList .languages ul li .name-lng {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #002f34;
+  cursor: pointer;
+  width: 50%;
+}
+.language-container .categoryList .languages ul li .tik-mark {
+  width: 15%;
+}
+.language-container .categoryList .languages ul li .tik-mark button {
+  height: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */

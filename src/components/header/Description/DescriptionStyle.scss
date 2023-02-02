@@ -1,0 +1,106 @@
+$primarycolor: #002f34;
+
+@mixin text-style {
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  color: #002f34;
+}
+@mixin flex-box($content: space-between) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+//-------------
+.discription-container {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top: 4.5rem;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
+
+  z-index: 9;
+  display: none;
+
+  @media screen and (min-width: 950px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-container {
+    height: inherit;
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    align-items: center;
+
+    .all-categories {
+      display: flex;
+
+      .text-c {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          font-size: 14px;
+          white-space: nowrap;
+          text-transform: uppercase;
+          font-weight: 700;
+          cursor: pointer;
+          color: #002f34;
+        }
+      }
+      .btn-c {
+        display: flex;
+        cursor: pointer;
+        
+        -webkit-tap-highlight-color: transparent;
+        padding: 8px;
+        width: 40px;
+        height: 40px;
+
+        .btn {
+         
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          fill: $primarycolor;
+        }
+      }
+    }
+  }
+  .categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 14px;
+    color: #002f34;
+
+    margin: 0 8px;
+    white-space: nowrap;
+    overflow: hidden;
+
+    min-width: 32px;
+
+    ul {
+      display: flex;
+      li {
+        list-style: none;
+        margin: 5px;
+        cursor: pointer;
+
+        &:hover {
+          color: rgb(0, 75, 145);
+        }
+      }
+    }
+  }
+}

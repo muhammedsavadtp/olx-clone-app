@@ -1,0 +1,80 @@
+.discription-container {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top: 4.5rem;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  z-index: 9;
+  display: none;
+}
+@media screen and (min-width: 950px) {
+  .discription-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.discription-container .main-container {
+  height: inherit;
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+  align-items: center;
+}
+.discription-container .main-container .all-categories {
+  display: flex;
+}
+.discription-container .main-container .all-categories .text-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.discription-container .main-container .all-categories .text-c span {
+  font-size: 14px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  color: #002f34;
+}
+.discription-container .main-container .all-categories .btn-c {
+  display: flex;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+}
+.discription-container .main-container .all-categories .btn-c .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #002f34;
+}
+.discription-container .categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 14px;
+  color: #002f34;
+  margin: 0 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 32px;
+}
+.discription-container .categories ul {
+  display: flex;
+}
+.discription-container .categories ul li {
+  list-style: none;
+  margin: 5px;
+  cursor: pointer;
+}
+.discription-container .categories ul li:hover {
+  color: rgb(0, 75, 145);
+}/*# sourceMappingURL=DescriptionStyle.css.map */

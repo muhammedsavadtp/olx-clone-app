@@ -1,0 +1,214 @@
+.box-log {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+.box-log .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin-top: 4rem;
+}
+.box-log .container .main_box {
+  margin: 0 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 400px;
+  overflow: hidden;
+  border-radius: 3px;
+  position: relative;
+  height: 600px;
+  padding: 16px 20px;
+}
+.box-log .container .main_box .btnClose {
+  display: flex;
+  flex-direction: row-reverse;
+  top: 16px;
+  cursor: pointer;
+}
+.box-log .container .main_box .login_model .poster .poster-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  -webkit-margin-after: 50px;
+          margin-block-end: 50px;
+}
+.box-log .container .main_box .login_model .poster .poster-container .slick-list-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.box-log .container .main_box .login_model .poster .poster-container .slick-list-container .slick-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.box-log .container .main_box .login_model .poster .poster-container .slick-list-container .slick-list .pictur-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.box-log .container .main_box .login_model .poster .poster-container .slick-list-container .slick-list .pictur-box img {
+  width: 100px;
+  height: 100px;
+}
+.box-log .container .main_box .login_model .poster .poster-container .slick-list-container .slick-list .description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  -webkit-margin-before: 15px;
+          margin-block-start: 15px;
+  -webkit-margin-after: 30px;
+          margin-block-end: 30px;
+}
+.box-log .container .main_box .login_model .poster .poster-container .slick-list-container .slick-list .description span {
+  font-size: 14px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.box-log .container .main_box .login_model .poster .poster-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.box-log .container .main_box .login_model .poster .poster-container ul li {
+  list-style: none;
+  padding: 0 2px;
+}
+.box-log .container .main_box .login_model .poster .poster-container ul li button {
+  border: 0px;
+  padding: 0px;
+  width: 6px;
+  font-size: 0px;
+  height: 100%;
+  line-height: 0;
+  display: block;
+  margin: 0px auto;
+  outline: none;
+  cursor: pointer;
+  background-color: initial;
+}
+.box-log .container .main_box .login_model .siginWith {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.box-log .container .main_box .login_model .siginWith .link-1 {
+  color: #002f34;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.box-log .container .main_box .login_model .siginWith .link-1 .input-bx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #002f34;
+  border-radius: 4px;
+  border: 2px solid #002f34;
+  padding: 0 10px;
+  font-size: 16px;
+  height: 48px;
+  margin: 4px 0;
+  cursor: pointer;
+}
+.box-log .container .main_box .login_model .siginWith .link-1 .input-bx:hover {
+  border: 5px solid #002f34;
+}
+.box-log .container .main_box .login_model .siginWith .link-1 .input-bx .container-inp-bx-2 {
+  display: flex;
+  align-items: center;
+  width: 20rem;
+  background: transparent;
+  max-height: 53px;
+  position: absolute;
+}
+.box-log .container .main_box .login_model .siginWith .link-1 .input-bx .container-inp-bx-2 .svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  width: 25px;
+  height: 40px;
+}
+.box-log .container .main_box .login_model .siginWith .link-1 .input-bx .container-inp-bx-2 span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  justify-content: flex-start;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.box-log .container .main_box .login_model .option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.box-log .container .main_box .login_model .option p {
+  margin: 16px 0;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box-log .container .main_box .login_model .siginWithEmail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  -webkit-margin-after: 40px;
+          margin-block-end: 40px;
+}
+.box-log .container .main_box .login_model .siginWithEmail span {
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  text-underline-position: under;
+  text-align: center;
+  text-decoration: underline;
+}
+.box-log .container .main_box .login_model .footer-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  -webkit-margin-after: 10px;
+          margin-block-end: 10px;
+}
+.box-log .container .main_box .login_model .footer-box .security {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0 16px;
+  font-size: 12px;
+}
+.box-log .container .main_box .login_model .footer-box p {
+  margin: 0;
+  padding: 0 20px;
+  text-align: center;
+  color: rgba(0, 47, 52, 0.64);
+  font-size: 12px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,84 @@
+.language-container {
+
+  top: 9rem;
+  left: 65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .categoryList {
+   
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    .languages {
+      column-count: 1;
+      width: 200px;
+      box-shadow: 0 4px 12px 1px rgb(0 0 0 / 50%);
+      border-radius: 4px;
+      background-color: #fff;
+      justify-content: space-between;
+      padding: 16px 16px 0;
+      max-width: 20rem;
+
+      &::before {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        top: -10px;
+        content: " ";
+        height: 0;
+        left: 50%;
+        margin-left: -24px;
+        position: absolute;
+        width: 0;
+      }
+      ul {
+        margin: 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        margin-block-end: 1em;
+
+        li {
+          width: 100%;
+          width: 100%;
+          cursor: pointer;
+          padding: 5px 0;
+
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          .name-lng {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 700;
+            color: #002f34;
+            cursor: pointer;
+            width: 50%;
+          }
+          .tik-mark {
+           width: 15%;
+            button {
+              height: 20px;
+              display: inline-flex;
+              justify-content: center;
+              align-items: center;
+              border-style: none;
+              background: none;
+              outline: none;
+              cursor: pointer;
+              position: relative;
+              overflow: hidden;
+              text-decoration: none;
+              border-radius: 50%;
+          
+             
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  color: #002f34;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+
+  section {
+    .error-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 10px;
+      .error-message-heading {
+        margin: 0;
+
+        text-align: center;
+        margin-block-start: 2em;
+
+        span {
+          font-size: 24px;
+          font-weight: bold;
+          font-family: Roboto, Arial, Helvetica, sans-serif;
+          color: #002f34;
+        }
+      }
+      .error-message {
+        margin: 0.5em 0 2.5em;
+        font-size: 16px;
+        text-align: center;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        color: #002f34;
+        pointer-events: none;
+      }
+      .error-image {
+        img {
+          display: block;
+          width: 100%;
+          max-width: 198px;
+          margin: 0 auto;
+          height: auto;
+          border-style: none;
+          overflow-clip-margin: content-box;
+          overflow: clip;
+          -webkit-tap-highlight-color: transparent;
+          touch-action: manipulation;
+          color: #002f34;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}
