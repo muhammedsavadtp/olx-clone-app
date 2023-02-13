@@ -453,6 +453,222 @@ header #main-head #header-box .container .login-box span::after {
 header #main-head #header-box .container .login-box span:hover::after {
   visibility: hidden; /*content is hidden when hovered over*/
 }
+header #main-head #header-box .container .userAfterLogin {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: auto;
+  display: none;
+}
+@media screen and (min-width: 950px) {
+  header #main-head #header-box .container .userAfterLogin {
+    display: flex;
+  }
+}
+header #main-head #header-box .container .userAfterLogin .chat_notification_cintainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+header #main-head #header-box .container .userAfterLogin .chat_notification_cintainer .chatBox {
+  margin-right: 10px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+header #main-head #header-box .container .userAfterLogin .chat_notification_cintainer .chatBox button {
+  cursor: pointer;
+  border: none;
+  fill: #002f34;
+  border-radius: 100%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header #main-head #header-box .container .userAfterLogin .chat_notification_cintainer .chatBox button:hover {
+  background-color: #c2f1f0;
+  transition: all 0.3s ease-in-out;
+}
+header #main-head #header-box .container .userAfterLogin .chat_notification_cintainer .notificationBox {
+  margin-right: 10px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+header #main-head #header-box .container .userAfterLogin .chat_notification_cintainer .notificationBox button {
+  cursor: pointer;
+  border: none;
+  fill: #002f34;
+  border-radius: 100%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header #main-head #header-box .container .userAfterLogin .chat_notification_cintainer .notificationBox button:hover {
+  background-color: #c2f1f0;
+  transition: all 0.3s ease-in-out;
+}
+header #main-head #header-box .container .userAfterLogin .userProfileBox {
+  width: auto;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+header #main-head #header-box .container .userAfterLogin .userProfileBox .iconProfile {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+  justify-content: flex-start;
+}
+header #main-head #header-box .container .userAfterLogin .userProfileBox .iconProfile .iconImage-box {
+  cursor: pointer;
+}
+header #main-head #header-box .container .userAfterLogin .userProfileBox .iconProfile .iconImage-box img {
+  width: 35px;
+  height: 35px;
+}
+header #main-head #header-box .container .userAfterLogin .userProfileBox .iconProfile .userMenu-box {
+  padding: 10px;
+}
+header #main-head #header-box .container .userAfterLogin .userProfileBox .iconProfile .userMenu-box .svg_icon_userMenu {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  justify-content: center;
+  cursor: pointer;
+}
+header #main-head #header-box .container .userAfterLogin .userMenu_list {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+header #main-head #header-box .container .userAfterLogin .userMenu_list .userMenu_list_container {
+  z-index: 10;
+  right: 194px;
+  top: 60px;
+  width: 288px;
+  position: fixed;
+  background: #fff;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.12), 0 6px 6px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+}
+header #main-head #header-box .container .userAfterLogin .userMenu_list .userMenu_list_container .profile {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  padding: 20px 16px;
+  box-sizing: border-box;
+}
+header #main-head #header-box .container .userAfterLogin .userMenu_list .userMenu_list_container .profile .image_box_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header #main-head #header-box .container .userAfterLogin .userMenu_list .userMenu_list_container .profile .loggedUser {
+  display: inline-flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 0px 0px 0px 12px;
+}
+header #main-head #header-box .container .userAfterLogin .userMenu_list .userMenu_list_container .profile .loggedUser .logged_user_container .greetings_logged_user-1 {
+  margin: 0px 0px 4px;
+}
+header #main-head #header-box .container .userAfterLogin .userMenu_list .userMenu_list_container .profile .loggedUser .logged_user_container .greetings_logged_user-1 .greetings_logged_user {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 47, 52, 0.64);
+}
+header #main-head #header-box .container .userAfterLogin .userMenu_list .userMenu_list_container .profile .loggedUser .logged_user_container .greetings_logged_user-2 {
+  margin: 0px 0px 4px;
+}
+header #main-head #header-box .container .userAfterLogin .userMenu_list .userMenu_list_container .profileCompletion {
+  padding: 16px;
+  display: block;
+}
+header #main-head #header-box .container .userAfterLogin .userMenu_list .userMenu_list_container .profileCompletion .steps_remainder {
+  font-size: 16px;
+  line-height: 24px;
+  color: #002f34;
+  font-weight: 700;
+}
+header #main-head #header-box .container .userAfterLogin .userMenu_list .userMenu_list_container .profileCompletion .steps_user_profile {
+  padding: 8px 0px;
+}
+header #main-head #header-box .container .userAfterLogin .userMenu_list .userMenu_list_container .profileCompletion .steps_user_profile .progressBar {
+  display: flex;
+  align-items: stretch;
+  height: 8px;
+}
+header #main-head #header-box .container .userAfterLogin .userMenu_list .userMenu_list_container .profileCompletion .steps_user_profile .progressBar .steps {
+  background: rgba(14, 4, 5, 0.2);
+  flex: 1 1 auto;
+  margin-right: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+header #main-head #header-box .container .userAfterLogin .userMenu_list .userMenu_list_container .profileCompletion .description_user_profile {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 47, 52, 0.64);
+  font-weight: 400;
+}
+header #main-head #header-box .container .userAfterLogin .userMenu_list .userMenu_list_container .menu_list_items {
+  border-top: 1px solid rgba(14, 4, 5, 0.2);
+}
+header #main-head #header-box .container .userAfterLogin .userMenu_list .userMenu_list_container .menu_list_items .line_1_1 {
+  border-top: 1px solid rgba(14, 4, 5, 0.2);
+}
+header #main-head #header-box .container .userAfterLogin .userMenu_list .userMenu_list_container .menu_list_items .list_boxes {
+  display: flex;
+  align-items: center;
+  padding: 0px 16px;
+  text-decoration: none;
+  color: rgb(0, 47, 52);
+  height: 48px;
+  font-size: 16px;
+  cursor: pointer;
+}
+header #main-head #header-box .container .userAfterLogin .userMenu_list .userMenu_list_container .menu_list_items .list_boxes:hover {
+  background-color: #c8f8f6;
+}
+header #main-head #header-box .container .userAfterLogin .userMenu_list .userMenu_list_container .menu_list_items .list_boxes .box_items_1 {
+  font-size: 16px;
+  color: rgb(0, 47, 52);
+  padding: 2px 16px 0px 0px;
+}
+header #main-head #header-box .container .userAfterLogin .userMenu_list::after {
+  content: "";
+  bottom: 100%;
+  left: 156px;
+  content: " ";
+  top: 14px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border: 12px solid transparent;
+  border-bottom-color: #fff;
+  z-index: 10;
+}
 header #main-head #header-box .container .sell-box {
   display: flex;
   width: 100%;

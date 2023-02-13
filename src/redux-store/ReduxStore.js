@@ -7,19 +7,22 @@ import selectLang from "./slice/selectLang";
 import LogInUser from "./slice/LogInUser";
 import userPhoneNumber from "./slice/userPhoneNumber";
 import checkUserAuth from "./slice/checkUserAuth";
-const store = configureStore({
-    reducer: {
-        testobj: TestSlice,
-        db: firebaseSlice,
-        darkmod,
-        location,
-        selectLang,
-        LogInUser,
-        userPhoneNumber,
-        checkUserAuth,
-        
+import loginPages from "./slice/loginPages";
 
-    }
-})
+// ==============================================================================================
+
+const store = configureStore({
+  reducer: {
+    testobj: TestSlice,
+    db: firebaseSlice,
+    darkmod,
+    location,
+    selectLang,
+    LogInUser,
+    userPhoneNumber,
+    checkUserAuth,
+    loginPages,
+  },
+});
 
 export default store;

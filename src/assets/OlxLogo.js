@@ -6,9 +6,7 @@ export default  function OlxLogo() {
         width="48px"
         height="48px"
         viewBox="0 0 1024 1024"
-        data-aut-id="icon"
-        className
-        fillRule="evenodd"
+       
         
       >
         <path

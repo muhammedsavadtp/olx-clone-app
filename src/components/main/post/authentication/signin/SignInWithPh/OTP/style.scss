@@ -1,3 +1,14 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 .otp_main_box {
   margin: 0 16px;
   width: 100%;
@@ -16,7 +27,7 @@
     display: flex;
     .svg_back_Box {
       display: flex;
-      padding: 10px;
+   
     }
   }
   .form_box_otp {
@@ -95,6 +106,7 @@
                 font-stretch: normal;
                 color: rgb(0, 47, 52);
                 box-shadow: rgb(0 47 52 / 64%) 0px 0px 0px 1px inset;
+                
               }
               .box_inside_line_otp {
                 left: 0px;

@@ -1,0 +1,536 @@
+.postYourAdd_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  -webkit-margin-after: 10px;
+          margin-block-end: 10px;
+}
+.postYourAdd_container .sell_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #f7f8f9;
+  height: 68px;
+}
+.postYourAdd_container .sell_header .header_conainer_sell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.postYourAdd_container .sell_header .header_conainer_sell .svg_back_se {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  width: 40px;
+  align-items: center;
+  background-color: transparent;
+  padding: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.postYourAdd_container #mainBoxPostAdd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.postYourAdd_container #mainBoxPostAdd .post_heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 5px;
+}
+.postYourAdd_container #mainBoxPostAdd .post_heading .heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  width: auto;
+  color: #002f34;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  width: 50%;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(14, 4, 5, 0.2);
+  border-radius: 4px;
+  flex-wrap: wrap;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .heading_content_bx {
+  width: 100%;
+  padding: 10px;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .heading_content_bx h3 {
+  text-transform: uppercase;
+  color: #002f34;
+  margin-left: 7px;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0 16px 16px;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .breadcrumb .list_box {
+  position: relative;
+  height: 40px;
+  margin: 0;
+  font-size: 12px;
+  box-sizing: border-box;
+  display: flex;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .breadcrumb .list_box ol {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .breadcrumb .list_box ol li {
+  display: flex;
+  list-style: none;
+  text-align: left;
+  align-items: center;
+  padding: 0 2px;
+  flex-shrink: 0;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .breadcrumb .list_box ol li span {
+  color: rgba(0, 47, 52, 0.64);
+  cursor: pointer;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .breadcrumb .list_box ol li .bar {
+  margin-left: 5px;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .breadcrumb .btn_box .change_Button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .breadcrumb .btn_box .change_Button span {
+  color: #002f34;
+  font-weight: 700;
+  margin-left: 6px;
+  border-bottom: 2px solid #002f34;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .breadcrumb .btn_box .change_Button span:hover {
+  border: none;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .line_bx {
+  width: 100%;
+  border-bottom: 1px solid rgba(14, 4, 5, 0.2);
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 30px 32px;
+  justify-content: flex-start;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 50%;
+  flex-wrap: wrap;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container h2 {
+  width: 100%;
+  font-size: 20px;
+  margin: 0 0 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .brand_box {
+  margin-bottom: 28px;
+  width: 100%;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .box_1 .main_box_container label {
+  color: #002f34;
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .box_1 .main_box_container .selection_box {
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(0, 47, 52, 0.64);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 4px;
+  border-style: none;
+  margin: 4px 0;
+  flex-wrap: wrap;
+  position: relative;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .box_1 .main_box_container .selection_box select {
+  width: 100%;
+  border: none;
+  padding: 15px 13px;
+  background: transparent;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .box_1 .main_box_container .selection_box .arrow_svg_bx {
+  cursor: pointer;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .box_1 .main_box_container .selection_box .arrow_svg_bx .arrow_svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(140px, -6px);
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .box_1 .main_box_container .ful_box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 4px;
+  border-style: none;
+  margin: 4px 0;
+  flex-wrap: wrap;
+  position: relative;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .box_1 .main_box_container .ful_box button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #fff;
+  border-style: none;
+  box-shadow: inset 0 0 0 1px #dbdbdb;
+  border-radius: 4px;
+  color: #002f34;
+  cursor: pointer;
+  font-size: 14px;
+  height: 36px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  min-width: 64px;
+  outline: 0;
+  padding: 8px 16px;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .box_1 .main_box_container .input-box-12 {
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(0, 47, 52, 0.64);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 4px;
+  border-style: none;
+  margin: 4px 0;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: flex-start;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .box_1 .main_box_container .input-box-12 input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 15px 10px;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .pricecontainer {
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(0, 47, 52, 0.64);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 4px;
+  border-style: none;
+  margin: 4px 0;
+  flex-wrap: wrap;
+  position: relative;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .pricecontainer .price_box {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .pricecontainer .price_box .rupee_box {
+  border-right: 1px solid rgba(0, 47, 52, 0.36);
+  color: rgba(0, 47, 52, 0.36);
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 32px;
+  line-height: 32px;
+  white-space: nowrap;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .pricecontainer .price_box .rupee_box .rupeesIcon span {
+  color: rgba(0, 47, 52, 0.64);
+  font-size: 12px;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .pricecontainer .price_box .input_box_1 {
+  width: 100%;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .pricecontainer .price_box .input_box_1 input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  border: none;
+  color: #002f34;
+  display: block;
+  font-size: 16px;
+  height: 48px;
+  box-sizing: border-box;
+  outline: none;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .priceLabel {
+  color: rgba(0, 47, 52, 0.64);
+  font-size: 12px;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .image_input_box .image_container {
+  margin-right: -10px;
+  box-sizing: border-box;
+  transition-duration: 0.5s;
+  transition-property: height;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .image_input_box .image_container ._img_upload {
+  border: 2px solid #9dadb6;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 104px;
+  vertical-align: top;
+  margin: 0 6px 6px 0;
+  width: 104px;
+  border-color: #002f34;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .image_input_box .image_container ._img_upload .upload_btn {
+  align-items: center;
+  cursor: pointer;
+  /* color: #9dadb6; */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .image_input_box .image_container ._img_upload .upload_btn button {
+  fill: #002f34;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .image_input_box .image_container ._img_upload .upload_btn .description_upload span {
+  color: #002f34;
+  font-size: 14px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .sphereLocationTabContainer {
+  width: 100%;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .sphereLocationTabContainer .list_items_location_box {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .sphereLocationTabContainer .list_items_location_box .items_list {
+  text-align: center;
+  flex: 1;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .sphereLocationTabContainer .list_items_location_box .items_list .sphereTabManual {
+  border-bottom: 1px solid #dbdbdb;
+  color: #002f34;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  color: #002f34;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  height: 41px;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .sphereLocationTabContainer .sphereTabContentLocationSelector .sphereTab_top {
+  margin-top: 20px;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .sphereLocationTabContainer .sphereTabContentLocationSelector .sphereTab_top .sphereTab_bottom {
+  margin-bottom: 20px;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .sphereLocationTabContainer .sphereTabContentLocationSelector .sphereTab_top .sphereTab_bottom .sphereTab_container label {
+  color: #002f34;
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .sphereLocationTabContainer .sphereTabContentLocationSelector .sphereTab_top .sphereTab_bottom .sphereTab_container .input_box8 {
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(0, 47, 52, 0.64);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 4px;
+  border-style: none;
+  margin: 4px 0;
+  flex-wrap: wrap;
+  position: relative;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .sphereLocationTabContainer .sphereTabContentLocationSelector .sphereTab_top .sphereTab_bottom .sphereTab_container .input_box8 select {
+  padding-right: 80px;
+  background: none;
+  border: none;
+  color: #002f34;
+  display: block;
+  font-size: 16px;
+  height: 48px;
+  box-sizing: border-box;
+  outline: none;
+  padding-left: 12px;
+  /* padding-right: 12px; */
+  width: 100%;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .user_details_container {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .user_details_container .user_image {
+  padding-right: 16px;
+  width: 120px;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .user_details_container .user_image .image_container1 {
+  cursor: pointer;
+  position: relative;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .user_details_container .user_image .image_container1 .avatarWrapper figure {
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .user_details_container .user_image .image_container1 .avatarWrapper figure img {
+  margin-left: 3px;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .user_details_container .user_image .image_container1 .avatarWrapper figure .svg_box_12 {
+  height: 33.3333px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 47, 52, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .user_details_container .user_name_inputbox {
+  width: 65%;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .user_details_container .user_name_inputbox .name_label_box label {
+  color: #002f34;
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .user_details_container .user_name_inputbox .name_label_box .user_name_input_container {
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(0, 47, 52, 0.64);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 4px;
+  border-style: none;
+  margin: 4px 0;
+  flex-wrap: wrap;
+  position: relative;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .user_details_container .user_name_inputbox .name_label_box .user_name_input_container .input_box_name_13 {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .user_details_container .user_name_inputbox .name_label_box .user_name_input_container .input_box_name_13 .input_user_name input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  border: none;
+  color: #002f34;
+  display: block;
+  font-size: 16px;
+  height: 48px;
+  box-sizing: border-box;
+  outline: none;
+  padding-left: 12px;
+  /* padding-right: 12px; */
+  width: 100%;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .user_details_container .user_name_inputbox .name_label_box .Description_count_text {
+  display: flex;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .user_details_container .user_name_inputbox .name_label_box .Description_count_text .space_span {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .user_details_container .user_name_inputbox .name_label_box .Description_count_text .count_span {
+  font-size: 12px;
+  color: rgba(0, 47, 52, 0.64);
+  padding-left: 16px;
+  white-space: nowrap;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .usercontact_info {
+  width: 100%;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .usercontact_info .otherPhoneLabel {
+  display: flex;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .usercontact_info .otherPhoneLabel .current_user_phoneNumber {
+  flex-grow: 1;
+  text-align: right;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .btnPost {
+  height: 48px;
+  cursor: not-allowed;
+  border: 5px solid #002f34;
+  padding: 0 7px;
+  background-color: #d8dfe0;
+  color: #7f9799;
+  border-color: #d8dfe0;
+  border-radius: 4px;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .btnPost span {
+  font-size: 16px;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */

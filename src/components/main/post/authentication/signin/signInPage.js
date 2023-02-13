@@ -1,25 +1,60 @@
-import React, { useState } from "react";
+// redux
+import React, { useEffect, useState } from "react";
+import { signInWithGoogleAuth } from "../../../../../redux-store/slice/checkUserAuth";
+import { useSelector, useDispatch } from "react-redux";
+import { setUserlogIn } from "../../../../../redux-store/slice/LogInUser";
+import { setCurrentLoginPage } from "../../../../../redux-store/slice/loginPages";
+//assets
 import Google from "../../../../../assets/Google";
 import Phone from "../../../../../assets/Phone";
 import Cancel from "../../../../../assets/Cancel";
+//router
+import { Link, useNavigate } from "react-router-dom";
+// style sheet
 import "./style.css";
-
-import { useSelector, useDispatch } from "react-redux";
-import { setUserlogIn } from "../../../../../redux-store/slice/LogInUser";
-import { Link } from "react-router-dom";
+// =========================================================================================================
 
 const SignInPageContent = () => {
+  const [btn, setbtn] = useState(1);
+  // use
   const dispatch = useDispatch();
-  const { LogInUser } = useSelector((state) => state);
+  const navigate = useNavigate();
 
-  console.log(LogInUser);
+  // destructure
+  const { userLoggedInStatus } = useSelector((state) => state.checkUserAuth);
 
+  //close btn action
   const closeAction = () => {
-    dispatch(setUserlogIn(false));
+    dispatch(setCurrentLoginPage(""));
   };
 
-  const [btn, setbtn] = useState(1);
+  // when page render
+  useEffect(() => {
+    if (userLoggedInStatus) {
+      navigate("/");
+      dispatch(setCurrentLoginPage(""));
+    }
+    return () => {
+      dispatch(setUserlogIn(false));
+    };
+  });
 
+  //continue with phone
+  const continueWithPhone = (e) => {
+    e.preventDefault();
+    dispatch(setCurrentLoginPage("continueWithPhone"));
+    console.log("continue with phone")
+  };
+
+  //sign in with google account
+  const signInWithGoogle = (e) => {
+    e.preventDefault();
+    dispatch(signInWithGoogleAuth());
+
+    console.log("userStatus :" + userLoggedInStatus);
+  };
+
+  //----------------------------------------------------------------------------------------------------------------
   return (
     <div className="box-log">
       <div className="container">
@@ -160,7 +195,7 @@ const SignInPageContent = () => {
             <div className=" siginWith">
               <Link className="link-1" to={"/signinphone"}>
                 {" "}
-                <div className="input-bx">
+                <div className="input-bx" onClick={(e) => continueWithPhone(e)}>
                   <div className="container-inp-bx-2">
                     <div className="svg">
                       <Phone />
@@ -172,9 +207,9 @@ const SignInPageContent = () => {
               </Link>{" "}
             </div>
             <div className="siginWith ">
-              <Link className="link-1" to={""}>
+              <Link className="link-1">
                 {" "}
-                <div className="input-bx">
+                <div className="input-bx" onClick={(e) => signInWithGoogle(e)}>
                   <div className="container-inp-bx-2">
                     <div className="svg">
                       <Google />

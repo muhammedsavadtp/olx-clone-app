@@ -9,11 +9,6 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row-reverse;
-
-  .svgClose-1 {
-  }
-  .svgBack-1 {
-  }
 }
 
 .login_model_1 {
@@ -86,34 +81,23 @@
     }
     .link-next-btn {
       display: flex;
-
       width: 100%;
       .btn-submit-next {
-        cursor: pointer;
-        color: #7f9799;
+       
 
-        background-color: #d8dfe0;
-        // background-color: #002f34;
-        border-radius: 4px;
-        border: 5px solid #d8dfe0;
-        padding: 0 7px;
-        font-size: 16px;
-        height: 48px;
-        margin: 4px 0;
-        display: inline-flex;
-        width: 100%;
-        font-family: Roboto, Arial, Helvetica, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        .bottom-text {
+          margin: 0;
+          padding: 0 20px;
+          text-align: center;
+          color: rgba(0, 47, 52, 0.64);
+          font-size: 12px;
+        }
       }
     }
     .bottom-text {
-      margin: 0;
-      padding: 0 20px;
       text-align: center;
-      color: rgba(0, 47, 52, 0.64);
       font-size: 12px;
+      color: #7f9799;
     }
   }
 }

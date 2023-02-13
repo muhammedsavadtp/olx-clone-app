@@ -4,8 +4,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: auto;
-  -webkit-animation: _3UyLB 0.3s ease;
-          animation: _3UyLB 0.3s ease;
+  animation: _3UyLB 0.3s ease;
   z-index: 9;
   min-width: 160px;
   background-color: #fff;

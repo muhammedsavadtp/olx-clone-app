@@ -8,7 +8,7 @@ const getDataInfo = createAsyncThunk('api/data', () => {
             const newData = querySnapshot.docs
                 .map((doc) => ({ ...doc.data(), id: doc.id }));
             return newData;
-        })
+        }) 
 })
 
 const firebase = createSlice({

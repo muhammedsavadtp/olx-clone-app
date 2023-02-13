@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import TikMark from "../../../assets/TikMark";
 import "./style.css";
 

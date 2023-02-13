@@ -1,46 +1,32 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import SignInPage from "../authentication/signin/signInPage";
-//read and put action
-import { useSelector, useDispatch } from "react-redux";
-//--
+import SignInWithPhoneNumber from "../authentication/signin/SignInWithPh/signInWithPhoneNumber";
+import RequestOTP from "../authentication/signin/SignInWithPh/OTP/RequestOTP";
+// redux
+import { useSelector } from "react-redux";
 
-//redux
-import { changename } from "../../../../redux-store/slice/TestSlice";
-import { getDataInfo } from "../../../../redux-store/slice/firebaseREAD";
-//logo
-import logo from "./../../../../logo.svg";
-//css
-import "./style.css";
+
+//assets
 import ArrowLeft from "../../../../assets/ArrowLeft";
 import Heart from "../../../../assets/Heart";
 import ArrowRight from "../../../../assets/ArrowRight";
 
+//css
+import "./style.css";
 const HomePage = () => {
-  //sate
-  const [click, setClick] = useState(false);
+  const page = useSelector((state) => state.loginPages);
 
-  //actions
-  //scroll action
-  const scrollRef = useRef(null);
-  const handleClick = () => {
-    setClick(true);
-    scrollRef.current.scrollLeft += 300;
-  };
-  const handleClickBack = () => {
-    if (scrollRef.current.scrollLeft > 0) {
-      scrollRef.current.scrollLeft -= 100;
-    } else {
-      setClick(false);
-    }
-  };
 
-  const dispatch = useDispatch();
-
-  const { LogInUser } = useSelector((state) => state);
-
+// --------------------------------------------------------------------------------------------
   return (
     <div>
-      {LogInUser && <SignInPage />}
+      {page === "loginMainPage" ? (
+        <SignInPage />
+      ) : page === "continueWithPhone" ? (
+        <SignInWithPhoneNumber />
+      ) : (
+        page === "signInWithOtp"?<RequestOTP/>: null
+      )}
 
       <div className="container">
         <div id="page-main-content">
@@ -63,13 +49,12 @@ const HomePage = () => {
                       </button>
                     </div>
                     <div className="ls-products">
-                      {click && (
-                        <div className="back-bt-1">
-                          <span onClick={handleClickBack}>
-                            <ArrowLeft />
-                          </span>
-                        </div>
-                      )}
+                      <div className="back-bt-1">
+                        <span>
+                          <ArrowLeft />
+                        </span>
+                      </div>
+
                       <div
                         className="ls-each-product"
                         // ref={scrollRef}
@@ -98,22 +83,21 @@ const HomePage = () => {
                                 Dwarka Main Road
                               </span>
                               <div className="footer-item">
-                                <span class="sp-1">
+                                <span className="sp-1">
                                   <span>Dec 30</span>
                                 </span>
                               </div>
                             </div>
                           </div>
-                          <span class="heart-like">
+                          <span className="heart-like">
                             <button>
                               <Heart />
                             </button>
                           </span>
                         </div>
-                        
                       </div>
                       <div className="more-btn">
-                        <span onClick={handleClick}>
+                        <span>
                           <ArrowRight />
                         </span>
                       </div>
@@ -166,13 +150,12 @@ const HomePage = () => {
                           </div>
                         </div>
                       </div>
-                      <span class="heart-icon">
+                      <span className="heart-icon">
                         <button>
                           <Heart />
                         </button>
                       </span>
                     </li>
-                   
                   </ul>
                 </div>
               </div>

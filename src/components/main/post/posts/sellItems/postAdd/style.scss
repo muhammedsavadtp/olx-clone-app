@@ -1,0 +1,563 @@
+$primaryTextColor: #002f34;
+@mixin flex_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.postYourAdd_container {
+  @include flex_box();
+
+  margin-block-end: 10px;
+
+  .sell_header {
+    @include flex_box();
+    background-color: #f7f8f9;
+    height: 68px;
+
+    .header_conainer_sell {
+      @include flex_box();
+      justify-content: flex-start;
+      background-color: transparent;
+      .svg_back_se {
+        @include flex_box();
+        width: 40px;
+        align-items: center;
+        background-color: transparent;
+        padding: 5px;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  #mainBoxPostAdd {
+    @include flex_box();
+    flex-wrap: wrap;
+
+    .post_heading {
+      @include flex_box();
+      margin: 5px;
+
+      .heading {
+        @include flex_box();
+        width: auto;
+        color: $primaryTextColor;
+      }
+    }
+    .content_Box {
+      margin-top: 15px;
+      @include flex_box();
+      width: 50%;
+      overflow: hidden;
+
+      background: #fff;
+      border: 1px solid rgba(14, 4, 5, 0.2);
+      border-radius: 4px;
+      flex-wrap: wrap;
+
+      .heading_content_bx {
+        width: 100%;
+
+        padding: 10px;
+        h3 {
+          text-transform: uppercase;
+          color: $primaryTextColor;
+          margin-left: 7px;
+        }
+      }
+      .breadcrumb {
+        @include flex_box();
+        justify-content: flex-start;
+
+        padding: 0 16px 16px;
+        .list_box {
+          position: relative;
+          height: 40px;
+          margin: 0;
+          font-size: 12px;
+          box-sizing: border-box;
+          display: flex;
+          ol {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            box-sizing: border-box;
+            overflow-x: auto;
+            overflow-y: hidden;
+
+            li {
+              display: flex;
+              list-style: none;
+              text-align: left;
+              align-items: center;
+              padding: 0 2px;
+              flex-shrink: 0;
+              span {
+                color: rgba(0, 47, 52, 0.64);
+                cursor: pointer;
+              }
+              .bar {
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+        .btn_box {
+          .change_Button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            span {
+              color: $primaryTextColor;
+
+              font-weight: 700;
+              margin-left: 6px;
+              border-bottom: 2px solid $primaryTextColor;
+
+              &:hover {
+                border: none;
+              }
+            }
+          }
+        }
+      }
+      .line_bx {
+        width: 100%;
+        border-bottom: 1px solid rgba(14, 4, 5, 0.2);
+      }
+      .input_box {
+        @include flex_box();
+        padding: 30px 32px;
+        justify-content: flex-start;
+        .input_container {
+          @include flex_box();
+          justify-content: flex-start;
+          width: 50%;
+          flex-wrap: wrap;
+          h2 {
+            width: 100%;
+            font-size: 20px;
+            margin: 0 0 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+          .brand_box {
+            margin-bottom: 28px;
+            width: 100%;
+          }
+          .box_1 {
+            .main_box_container {
+              label {
+                color: #002f34;
+                display: block;
+                font-size: 14px;
+                line-height: 16px;
+              }
+              .selection_box {
+                background: #fff;
+                box-shadow: inset 0 0 0 1px rgb(0 47 52 / 64%);
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                border-radius: 4px;
+                border-style: none;
+                margin: 4px 0;
+                flex-wrap: wrap;
+                position: relative;
+
+                select {
+                  width: 100%;
+                  border: none;
+                  padding: 15px 13px;
+                  background: transparent;
+                }
+                .arrow_svg_bx {
+                  cursor: pointer;
+                  .arrow_svg {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(140px, -6px);
+                  }
+                }
+              }
+              .ful_box {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                border-radius: 4px;
+                border-style: none;
+                margin: 4px 0;
+                flex-wrap: wrap;
+                position: relative;
+
+                button {
+                  appearance: none;
+                  background-color: #fff;
+                  border-style: none;
+                  box-shadow: inset 0 0 0 1px #dbdbdb;
+                  border-radius: 4px;
+                  color: #002f34;
+                  cursor: pointer;
+                  font-size: 14px;
+                  height: 36px;
+                  margin-bottom: 8px;
+                  margin-right: 8px;
+                  min-width: 64px;
+                  outline: 0;
+                  padding: 8px 16px;
+                }
+              }
+              .input-box-12 {
+                background: #fff;
+                box-shadow: inset 0 0 0 1px rgb(0 47 52 / 64%);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border-radius: 4px;
+                border-style: none;
+                margin: 4px 0;
+                flex-wrap: wrap;
+                position: relative;
+                justify-content: flex-start;
+
+                input {
+                  width: 100%;
+                  border: none;
+                  background-color: transparent;
+                  padding: 15px 10px;
+                }
+              }
+            }
+          }
+          .pricecontainer {
+            background: #fff;
+            box-shadow: inset 0 0 0 1px rgb(0 47 52 / 64%);
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            border-radius: 4px;
+            border-style: none;
+            margin: 4px 0;
+            flex-wrap: wrap;
+            position: relative;
+            .price_box {
+              align-items: center;
+              display: flex;
+              width: 100%;
+
+              .rupee_box {
+                border-right: 1px solid rgba(0, 47, 52, 0.36);
+                color: rgba(0, 47, 52, 0.36);
+                padding-left: 12px;
+                padding-right: 12px;
+                height: 32px;
+                line-height: 32px;
+                white-space: nowrap;
+                .rupeesIcon {
+                  span {
+                    color: rgba(0, 47, 52, 0.64);
+                    font-size: 12px;
+                  }
+                }
+              }
+              .input_box_1 {
+                width: 100%;
+                input {
+                  appearance: none;
+                  background: none;
+                  border: none;
+                  color: #002f34;
+                  display: block;
+                  font-size: 16px;
+                  height: 48px;
+                  box-sizing: border-box;
+                  outline: none;
+                  padding-left: 12px;
+                  padding-right: 12px;
+                  width: 100%;
+                }
+              }
+            }
+          }
+          .priceLabel {
+            color: rgba(0, 47, 52, 0.64);
+            font-size: 12px;
+          }
+
+          .image_input_box {
+            .image_container {
+              margin-right: -10px;
+              box-sizing: border-box;
+              transition-duration: 0.5s;
+              transition-property: height;
+              transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+              ._img_upload {
+                border: 2px solid #9dadb6;
+                box-sizing: border-box;
+                display: inline-block;
+                height: 104px;
+                vertical-align: top;
+                margin: 0 6px 6px 0;
+                width: 104px;
+                border-color: #002f34;
+                .upload_btn {
+                  align-items: center;
+                  cursor: pointer;
+                  /* color: #9dadb6; */
+                  display: flex;
+                  flex-direction: column;
+                  height: 100%;
+                  justify-content: center;
+                  width: 100%;
+
+                  button {
+                    fill: #002f34;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-style: none;
+                    background: none;
+                    outline: none;
+                    cursor: pointer;
+                    position: relative;
+                    overflow: hidden;
+                    text-decoration: none;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    padding: 0;
+                  }
+                  .description_upload {
+                    span {
+                      color: #002f34;
+                      font-size: 14px;
+                      text-transform: capitalize;
+                      text-align: center;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .sphereLocationTabContainer {
+            width: 100%;
+
+            .list_items_location_box {
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              list-style: none;
+              display: flex;
+              justify-content: space-between;
+
+              .items_list {
+                text-align: center;
+                flex: 1;
+                .sphereTabManual {
+                  border-bottom: 1px solid #dbdbdb;
+                  color: #002f34;
+                  font-weight: 400;
+                  line-height: 20px;
+                  font-size: 14px;
+
+                  font-style: normal;
+                  font-stretch: normal;
+                  color: #002f34;
+                  padding: 10px;
+                  cursor: pointer;
+                  text-transform: uppercase;
+                  box-sizing: border-box;
+                  height: 41px;
+
+                  span {
+                  }
+                }
+              }
+            }
+            .sphereTabContentLocationSelector {
+              .sphereTab_top {
+                margin-top: 20px;
+                .sphereTab_bottom {
+                  margin-bottom: 20px;
+                  .sphereTab_container {
+                    label {
+                      color: #002f34;
+                      display: block;
+                      font-size: 14px;
+                      line-height: 16px;
+                    }
+                    .input_box8 {
+                      background: #fff;
+                      box-shadow: inset 0 0 0 1px rgb(0 47 52 / 64%);
+                      display: flex;
+                      flex-direction: row;
+                      align-items: flex-start;
+                      border-radius: 4px;
+                      border-style: none;
+                      margin: 4px 0;
+                      flex-wrap: wrap;
+                      position: relative;
+
+                      select {
+                        padding-right: 80px;
+                        // appearance: none;
+                        background: none;
+                        border: none;
+                        color: #002f34;
+                        display: block;
+                        font-size: 16px;
+                        height: 48px;
+                        box-sizing: border-box;
+                        outline: none;
+                        padding-left: 12px;
+                        /* padding-right: 12px; */
+                        width: 100%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .user_details_container {
+            width: 100%;
+            display: flex;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+
+            .user_image {
+              padding-right: 16px;
+              width: 120px;
+
+              .image_container1 {
+                cursor: pointer;
+                position: relative;
+                .avatarWrapper {
+                  figure {
+                    background-size: cover;
+                    border-radius: 50%;
+                    margin: 0;
+                    position: relative;
+                    overflow: hidden;
+                    img {
+                      margin-left: 3px;
+                    }
+                    .svg_box_12 {
+                      height: 33.3333px;
+                      position: absolute;
+                      bottom: 0;
+                      left: 0;
+                      right: 0;
+
+                      background: rgba(0, 47, 52, 0.7);
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      cursor: pointer;
+                    }
+                  }
+                }
+                input {
+                  // position: absolute;
+                  // top: 5px;
+                  //   overflow: visible;
+                }
+              }
+            }
+            .user_name_inputbox {
+              width: 65%;
+
+              .name_label_box {
+                label {
+                  color: #002f34;
+                  display: block;
+                  font-size: 14px;
+                  line-height: 16px;
+                }
+                .user_name_input_container {
+                  background: #fff;
+                  box-shadow: inset 0 0 0 1px rgb(0 47 52 / 64%);
+                  display: flex;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  border-radius: 4px;
+                  border-style: none;
+                  margin: 4px 0;
+                  flex-wrap: wrap;
+                  position: relative;
+                  .input_box_name_13 {
+                    align-items: center;
+                    display: flex;
+                    width: 100%;
+                    .input_user_name {
+                      input {
+                        appearance: none;
+                        background: none;
+                        border: none;
+                        color: #002f34;
+                        display: block;
+                        font-size: 16px;
+                        height: 48px;
+                        box-sizing: border-box;
+                        outline: none;
+                        padding-left: 12px;
+                        /* padding-right: 12px; */
+                        width: 100%;
+                      }
+                    }
+                  }
+                }
+                .Description_count_text {
+                  display: flex;
+                  .space_span {
+                    display: flex;
+                    align-items: center;
+                    flex-grow: 1;
+                  }
+                  .count_span {
+                    font-size: 12px;
+                    color: rgba(0, 47, 52, 0.64);
+                    padding-left: 16px;
+                    white-space: nowrap;
+                  }
+                }
+              }
+            }
+          }
+          .usercontact_info {
+            width: 100%;
+
+            .otherPhoneLabel {
+              display: flex;
+              margin-bottom: 24px;
+              margin-top: 24px;
+
+              .current_user_phoneNumber {
+                flex-grow: 1;
+                text-align: right;
+              }
+            }
+          }
+          .btnPost {
+            height: 48px;
+            cursor: not-allowed;
+            border: 5px solid #002f34;
+            padding: 0 7px;
+            background-color: #d8dfe0;
+            color: #7f9799;
+            border-color: #d8dfe0;
+            border-radius: 4px;
+            span {
+              font-size: 16px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}

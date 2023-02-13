@@ -7,8 +7,7 @@ export default function Search(props) {
         viewBox="0 0 1024 1024"
         data-aut-id="icon"
         color={props.color ? props.color :''}
-        className
-        fillRule="evenodd"
+      
       >
         <path
           className="rui-77aaa"

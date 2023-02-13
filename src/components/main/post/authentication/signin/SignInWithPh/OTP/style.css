@@ -1,3 +1,15 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .otp_main_box {
   margin: 0 16px;
   width: 100%;
@@ -17,7 +29,6 @@
 }
 .otp_main_box .btnBack_otp_svg .svg_back_Box {
   display: flex;
-  padding: 10px;
 }
 .otp_main_box .form_box_otp {
   padding: 0;

@@ -20,7 +20,6 @@ const ErrorPage = () => {
             <picture className="error-image">
               <img
                 src="https://statics.olx.in/external/base/img/noResults.png"
-                class="_1spDR"
                 alt=""
               ></img>
             </picture>

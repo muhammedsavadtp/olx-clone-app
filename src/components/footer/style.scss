@@ -275,41 +275,6 @@
         }
       }
     }
-    .default-footer-2 {
-      color: #fff;
-      font-size: 12px;
-      line-height: 18px;
-      background: #002f34;
-      padding: 16px 0;
-      .d-2-copyrights {
-        margin: auto;
-        width: 100%;
-        max-width: 1200px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-
-        .d-2-cp {
-          color: #fff;
-          font-size: 12px;
-          line-height: 18px;
-        }
-        .d-2-country {
-          color: #fff;
-          font-size: 12px;
-          line-height: 18px;
-          .d-2-country-names {
-            font-weight: 700;
-            padding-bottom: 8px;
-          }
-        }
-        a {
-          color: #fff;
-          text-decoration: none;
-          cursor: pointer;
-          background-color: initial;
-        }
-      }
-    }
+   
   }
 }
