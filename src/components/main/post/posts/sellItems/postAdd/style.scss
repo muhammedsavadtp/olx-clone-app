@@ -48,7 +48,7 @@ $primaryTextColor: #002f34;
     .content_Box {
       margin-top: 15px;
       @include flex_box();
-      width: 50%;
+      width: 70%;
       overflow: hidden;
 
       background: #fff;
@@ -174,11 +174,12 @@ $primaryTextColor: #002f34;
                 }
                 .arrow_svg_bx {
                   cursor: pointer;
+                  position: relative;
                   .arrow_svg {
                     position: absolute;
                     top: 50%;
                     left: 50%;
-                    transform: translate(140px, -6px);
+                    transform: translate(-28px, 13px);
                   }
                 }
               }
@@ -207,6 +208,10 @@ $primaryTextColor: #002f34;
                   min-width: 64px;
                   outline: 0;
                   padding: 8px 16px;
+
+                  &:hover {
+                    background-color: #c8f8f6;
+                  }
                 }
               }
               .input-box-12 {
@@ -325,7 +330,7 @@ $primaryTextColor: #002f34;
                     overflow: hidden;
                     text-decoration: none;
                     border-radius: 50%;
-                    width: 40px;
+                    // width: 40px;
                     height: 40px;
                     padding: 0;
                   }

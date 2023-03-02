@@ -9,6 +9,8 @@ import './route.css'
 import NewTestOtp from "../components/main/post/authentication/signin/SignInWithPh/OTP/NewTestOtp";
 import SellItems from "../pages/SellItems";
 import PostYouradd from "../pages/PostYouradd";
+import ViewPost from "../pages/ViewPost";
+import LoadingPageAction from "../components/loading/LoadingPageAction";
 const PageRouter = () => {
   return (
     <div className="pages">
@@ -21,7 +23,10 @@ const PageRouter = () => {
         <Route path="singinwithotpnew" element={<NewTestOtp/>} />
         <Route path="sell" element={<SellItems/>} />
         <Route path="postyouradd" element={<PostYouradd/>} />
+        <Route path="viewpost/:productID" element={<ViewPost/>} />
+        <Route path="loading" element={<LoadingPageAction/>} />
         <Route path="*" element={<Error />} />
+
         
     </Routes>
     </div>

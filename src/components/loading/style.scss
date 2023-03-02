@@ -1,0 +1,60 @@
+.spinner_container {
+   
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgba(0,0,0,.8);
+  width: auto;
+  height: 100vh;
+
+
+.svg_spin_bx{
+    display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+.rui-9iIWV {
+    overflow: hidden;
+    animation: rotate 2s linear infinite;
+
+    .rui-1Iei9 {
+      stroke-dashoffset: 0;
+      stroke-linecap: round;
+      stroke-dasharray: 1, 150;
+      animation: dash 1.5s ease-in-out infinite;
+      stroke: #fff;
+      stroke-width: 2px;
+
+      @keyframes dash {
+        0% {
+          stroke-dasharray: 1, 150;
+          stroke-dashoffset: 0;
+        }
+        50% {
+          stroke-dasharray: 90, 150;
+          stroke-dashoffset: -35;
+        }
+        100% {
+          stroke-dasharray: 90, 150;
+          stroke-dashoffset: -124;
+        }
+      }
+    }
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  p {
+    width: 100%;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+}
+  
+}

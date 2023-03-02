@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Heart() {
+export default function Heart({ svgHeartWidth, svgHeartHeight }) {
     return(
         <svg
-        width="24px"
-        height="24px"
+        width={svgHeartWidth ? svgHeartWidth :"24px"}
+        height={svgHeartHeight ? svgHeartHeight:"24px"}
         viewBox="0 0 1024 1024"
       
       >

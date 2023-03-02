@@ -62,7 +62,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  width: 50%;
+  width: 70%;
   overflow: hidden;
   background: #fff;
   border: 1px solid rgba(14, 4, 5, 0.2);
@@ -189,12 +189,13 @@
 }
 .postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .box_1 .main_box_container .selection_box .arrow_svg_bx {
   cursor: pointer;
+  position: relative;
 }
 .postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .box_1 .main_box_container .selection_box .arrow_svg_bx .arrow_svg {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(140px, -6px);
+  transform: translate(-28px, 13px);
 }
 .postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .box_1 .main_box_container .ful_box {
   display: flex;
@@ -223,6 +224,9 @@
   min-width: 64px;
   outline: 0;
   padding: 8px 16px;
+}
+.postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .box_1 .main_box_container .ful_box button:hover {
+  background-color: #c8f8f6;
 }
 .postYourAdd_container #mainBoxPostAdd .content_Box .input_box .input_container .box_1 .main_box_container .input-box-12 {
   background: #fff;
@@ -336,7 +340,6 @@
   overflow: hidden;
   text-decoration: none;
   border-radius: 50%;
-  width: 40px;
   height: 40px;
   padding: 0;
 }

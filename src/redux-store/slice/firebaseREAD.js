@@ -3,7 +3,7 @@ import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase/dbconfig"
 
 const getDataInfo = createAsyncThunk('api/data', () => {
-    return getDocs(collection(db, "users"))
+    return getDocs(collection(db, "products"))
         .then((querySnapshot) => {
             const newData = querySnapshot.docs
                 .map((doc) => ({ ...doc.data(), id: doc.id }));
@@ -11,7 +11,7 @@ const getDataInfo = createAsyncThunk('api/data', () => {
         }) 
 })
 
-const firebase = createSlice({
+const firebase = createSlice({ 
     name: "data",
     initialState: {
         data: [],

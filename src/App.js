@@ -5,6 +5,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { getAuth } from "firebase/auth";
 import { setCurrentUser } from "./redux-store/slice/checkUserAuth";
 import { useDispatch, useSelector } from "react-redux";
+import { getDataInfo } from "./redux-store/slice/firebaseREAD";
 // ----------------------------------------------------------------------------------------------------------
 function App() {
   const status = useSelector((store) => store.darkmod);
@@ -27,6 +28,7 @@ function App() {
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       dispatch(setCurrentUser(user));
+      dispatch(getDataInfo())
     });
   });
 

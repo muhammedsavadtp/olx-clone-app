@@ -8,6 +8,8 @@ import LogInUser from "./slice/LogInUser";
 import userPhoneNumber from "./slice/userPhoneNumber";
 import checkUserAuth from "./slice/checkUserAuth";
 import loginPages from "./slice/loginPages";
+import postAdd from "./slice/postAdd";
+import viewAdd from "./slice/viewAdd";
 
 // ==============================================================================================
 
@@ -22,6 +24,8 @@ const store = configureStore({
     userPhoneNumber,
     checkUserAuth,
     loginPages,
+    postAdd,
+    viewAdd
   },
 });
 

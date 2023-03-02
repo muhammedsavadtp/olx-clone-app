@@ -8,7 +8,7 @@ const Furniture = () => {
           viewBox="0 0 1024 1024"
           data-aut-id="icon"
           className=""
-          fill-rule="evenodd"
+      
       >
           <path
               className="rui-10_kq"

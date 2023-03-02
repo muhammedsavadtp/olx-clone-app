@@ -56,6 +56,7 @@ const RequestOTP = () => {
   useEffect(() => {
     if (otp.join("").length === 6) {
       submitOtp();
+      dispach(setCurrentLoginPage(''))
     }
   });
 
